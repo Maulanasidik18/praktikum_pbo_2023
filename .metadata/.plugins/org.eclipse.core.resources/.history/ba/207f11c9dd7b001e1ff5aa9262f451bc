@@ -1,0 +1,38 @@
+package tugas49;
+
+public class BiayaEmasKawin {
+	    private double harga;
+	    private double berat;
+
+	    public double getHarga() {
+	        return harga;
+	    }
+
+	    public void setHarga(double harga) {
+	        this.harga = harga;
+	    }
+
+	    public double getBerat() {
+	        return berat;
+	    }
+
+	    public void setBerat(double berat) {
+	        this.berat = berat;
+	    }
+
+	    public double hitungHargaEmas(double harga, double berat){
+	        this.berat = berat;
+	        this.harga = harga;
+
+	        return harga * berat;
+	    }
+
+	    public static void main(String[] args) {
+	        BiayaMasKawin asep = new BiayaMasKawin();
+	        asep.setBerat(15.7);
+	        asep.setHarga(570000);
+	        System.out.println("Jadi Harganya Adalah : Rp."+asep.hitungHargaEmas(asep.getBerat() , hendi.getHarga()));
+	    }
+	}
+
+}
